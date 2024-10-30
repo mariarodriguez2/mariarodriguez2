@@ -1,0 +1,182 @@
+/* Estilos generales */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Fondo de la página */
+body {
+    background: url('https://t1.uc.ltmcdn.com/es/posts/9/5/5/cuando_fueron_los_primeros_juegos_olimpicos_su_historia_y_su_origen_54559_600.webp') no-repeat center center fixed;
+    background-size: cover;
+    color: #f7f3f3;
+    line-height: 1.6;
+    padding: 0 10px;
+}
+
+/* Contenedor principal */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.6); /* Fondo semi-transparente para mejorar legibilidad */
+    border-radius: 10px;
+}
+
+/* Encabezados */
+h1, h2, h3 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #f5d866;
+    text-shadow: 2px 2px 4px #000;
+}
+
+h1 {
+    font-size: 2.5em;
+    margin-top: 20px;
+}
+
+h2 {
+    font-size: 2em;
+    margin-top: 30px;
+}
+
+h3 {
+    font-size: 1.5em;
+}
+
+/* Párrafos */
+p {
+    font-size: 1.1em;
+    margin-bottom: 15px;
+    text-align: justify;
+    text-shadow: 1px 1px 2px #000;
+}
+
+/* Listas */
+ul {
+    padding-left: 20px;
+    margin-bottom: 20px;
+}
+
+ul li {
+    margin-bottom: 10px;
+    font-size: 1.1em;
+}
+
+/* Contenedor de deportes e imagen */
+.deportes-contenedor {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+/* Lista de deportes */
+.deportes-lista {
+    flex: 2;
+    list-style-type: square;
+    padding-right: 20px;
+}
+
+.deportes-lista li {
+    margin-bottom: 8px;
+}
+
+/* Imagen al lado de la lista */
+.deportes-imagen img {
+    max-width: 300px;
+    height: auto;
+    border-radius: 10px;
+    border: 2px solid #ffffff;
+}
+
+/* Tabla */
+table {
+    width: 100%;
+    margin: 20px 0;
+    border-collapse: collapse;
+    background-color: rgba(0, 0, 0, 0.8); /* Fondo oscuro semi-transparente */
+    color: white;
+    text-align: center;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+th, td {
+    padding: 10px;
+    border-bottom: 1px solid #444;
+}
+
+th {
+    background-color: #004080;
+    color: #ffcc00;
+}
+
+td {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+tr:hover td {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+/* Enlaces */
+a {
+    color: #ffcc00;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Footer */
+footer {
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 40px;
+    border-top: 1px solid #444;
+}
+
+footer a {
+    color: #ffcc00;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* Responsividad */
+@media (max-width: 768px) {
+    .deportes-contenedor {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .deportes-lista {
+        padding-right: 0;
+        text-align: center;
+    }
+
+    .deportes-imagen img {
+        max-width: 80%;
+        margin-top: 20px;
+    }
+
+    h1 {
+        font-size: 2em;
+    }
+
+    h2 {
+        font-size: 1.5em;
+    }
+
+    p, ul, table {
+        font-size: 1em;
+    }
+}
